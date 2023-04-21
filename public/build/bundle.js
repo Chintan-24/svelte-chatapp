@@ -23993,19 +23993,17 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (283:3) {:else}
+    // (279:3) {:else}
     function create_else_block$1(ctx) {
     	let div2;
     	let div0;
     	let img;
     	let img_src_value;
     	let t0;
-    	let span;
-    	let t2;
     	let div1;
-    	let t3_value = /*chat*/ ctx[12].message + "";
-    	let t3;
-    	let t4;
+    	let t1_value = /*chat*/ ctx[12].message + "";
+    	let t1;
+    	let t2;
 
     	const block = {
     		c: function create() {
@@ -24013,41 +24011,34 @@ var app = (function () {
     			div0 = element("div");
     			img = element("img");
     			t0 = space();
-    			span = element("span");
-    			span.textContent = "user";
-    			t2 = space();
     			div1 = element("div");
-    			t3 = text(t3_value);
-    			t4 = space();
+    			t1 = text(t1_value);
+    			t2 = space();
     			if (img.src !== (img_src_value = /*chat*/ ctx[12].avatar)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "class", "svelte-1r61t05");
-    			add_location(img, file$2, 285, 6, 6223);
-    			attr_dev(span, "class", "username svelte-1r61t05");
-    			add_location(span, file$2, 286, 6, 6253);
+    			add_location(img, file$2, 281, 6, 5985);
     			attr_dev(div0, "class", "avatar tooltip svelte-1r61t05");
-    			add_location(div0, file$2, 284, 5, 6188);
+    			add_location(div0, file$2, 280, 5, 5950);
     			attr_dev(div1, "class", "text svelte-1r61t05");
-    			add_location(div1, file$2, 288, 5, 6305);
+    			add_location(div1, file$2, 284, 5, 6087);
     			attr_dev(div2, "class", "message other-message svelte-1r61t05");
-    			add_location(div2, file$2, 283, 4, 6147);
+    			add_location(div2, file$2, 279, 4, 5909);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
     			append_dev(div2, div0);
     			append_dev(div0, img);
-    			append_dev(div0, t0);
-    			append_dev(div0, span);
-    			append_dev(div2, t2);
+    			append_dev(div2, t0);
     			append_dev(div2, div1);
-    			append_dev(div1, t3);
-    			append_dev(div2, t4);
+    			append_dev(div1, t1);
+    			append_dev(div2, t2);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*$chats*/ 8 && img.src !== (img_src_value = /*chat*/ ctx[12].avatar)) {
     				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*$chats*/ 8 && t3_value !== (t3_value = /*chat*/ ctx[12].message + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*$chats*/ 8 && t1_value !== (t1_value = /*chat*/ ctx[12].message + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div2);
@@ -24058,14 +24049,14 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(283:3) {:else}",
+    		source: "(279:3) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (275:3) {#if user.uid == chat.uid}
+    // (273:3) {#if user.uid == chat.uid}
     function create_if_block$1(ctx) {
     	let div1;
     	let div0;
@@ -24080,9 +24071,9 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(div0, "class", "text svelte-1r61t05");
-    			add_location(div0, file$2, 276, 5, 5989);
+    			add_location(div0, file$2, 274, 5, 5831);
     			attr_dev(div1, "class", "message my-message svelte-1r61t05");
-    			add_location(div1, file$2, 275, 4, 5951);
+    			add_location(div1, file$2, 273, 4, 5793);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -24102,14 +24093,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(275:3) {#if user.uid == chat.uid}",
+    		source: "(273:3) {#if user.uid == chat.uid}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (274:2) {#each $chats as chat}
+    // (272:2) {#each $chats as chat}
     function create_each_block(ctx) {
     	let if_block_anchor;
 
@@ -24153,7 +24144,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(274:2) {#each $chats as chat}",
+    		source: "(272:2) {#each $chats as chat}",
     		ctx
     	});
 
@@ -24217,25 +24208,25 @@ var app = (function () {
     			i = element("i");
     			create_component(keydown.$$.fragment);
     			attr_dev(div0, "class", "logo svelte-1r61t05");
-    			add_location(div0, file$2, 269, 2, 5713);
+    			add_location(div0, file$2, 267, 2, 5555);
     			attr_dev(button0, "class", "logoutBtn svelte-1r61t05");
-    			add_location(button0, file$2, 270, 2, 5785);
+    			add_location(button0, file$2, 268, 2, 5627);
     			attr_dev(div1, "class", "header svelte-1r61t05");
-    			add_location(div1, file$2, 268, 1, 5690);
+    			add_location(div1, file$2, 266, 1, 5532);
     			attr_dev(div2, "class", "messages svelte-1r61t05");
-    			add_location(div2, file$2, 272, 1, 5854);
+    			add_location(div2, file$2, 270, 1, 5696);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "class", "inputBox svelte-1r61t05");
-    			add_location(input, file$2, 296, 2, 6417);
-    			add_location(div3, file$2, 297, 2, 6477);
+    			add_location(input, file$2, 292, 2, 6199);
+    			add_location(div3, file$2, 293, 2, 6259);
     			attr_dev(i, "class", "fa fa-paper-plane");
-    			add_location(i, file$2, 299, 3, 6527);
+    			add_location(i, file$2, 295, 3, 6309);
     			attr_dev(button1, "class", "svelte-1r61t05");
-    			add_location(button1, file$2, 298, 2, 6492);
+    			add_location(button1, file$2, 294, 2, 6274);
     			attr_dev(div4, "class", "form svelte-1r61t05");
-    			add_location(div4, file$2, 295, 1, 6396);
+    			add_location(div4, file$2, 291, 1, 6178);
     			attr_dev(main, "class", "shadow svelte-1r61t05");
-    			add_location(main, file$2, 264, 0, 5569);
+    			add_location(main, file$2, 265, 0, 5509);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

@@ -19,6 +19,7 @@
     "svelte-keydown": "^0.6.0"
   },
   "dependencies": {
+    "@firebase/auth": "^0.23.0",
     "@kizivat/svelte-autoscroll": "^0.2.2",
     "firebase": "^8.7.0",
     "rxfire": "^4.0.0",

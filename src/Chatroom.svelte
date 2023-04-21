@@ -4,6 +4,7 @@
 	import {startWith} from "rxjs/operators";
 	import autoscroll from '@kizivat/svelte-autoscroll';
 
+
 	export let user;
 	export let logout;
 
@@ -107,7 +108,7 @@
 
 	let randomNumber = Math.floor(Math.random()*chatName.length);
 	let randomEmoji = Math.floor(Math.random()*emojis.length);
-	//audioElement.setAttribute('src', textArray[randomNumber]);
+
 </script>
 
 <style>
@@ -263,9 +264,6 @@
 </style>
 
 <main class="shadow">
-	<!-- <div class="tooltip">Hover over me
-		<span class="username">Tooltip text</span>
-	</div> -->
 	<div class="header">
 		<div class="logo">{emojis[randomEmoji]}{chatName[randomNumber]}</div>
 		<button on:click={logout} class="logoutBtn">Logout</button>
@@ -276,15 +274,13 @@
 				<div class="message my-message">
 					<div class="text">
 						{chat.message}
-						<!-- {console.log(user.displayName)}
-						{console.log(currentUser)} -->
 					</div>
 				</div>
 			{:else}
 				<div class="message other-message">
 					<div class="avatar tooltip">
 						<img src={chat.avatar}>
-						<span class="username">user</span>
+						<!-- <span class="username">{console.log()}</span> -->
 					</div>
 					<div class="text">
 						{chat.message}
