@@ -279,7 +279,7 @@
 			{:else}
 				<div class="message other-message">
 					<div class="avatar tooltip">
-						<img src={chat.avatar}>
+						<img src={chat.avatar} alt="">
 						<!-- <span class="username">{console.log()}</span> -->
 					</div>
 					<div class="text">

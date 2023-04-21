@@ -24015,12 +24015,13 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			if (img.src !== (img_src_value = /*chat*/ ctx[12].avatar)) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-1r61t05");
     			add_location(img, file$2, 281, 6, 5985);
     			attr_dev(div0, "class", "avatar tooltip svelte-1r61t05");
     			add_location(div0, file$2, 280, 5, 5950);
     			attr_dev(div1, "class", "text svelte-1r61t05");
-    			add_location(div1, file$2, 284, 5, 6087);
+    			add_location(div1, file$2, 284, 5, 6094);
     			attr_dev(div2, "class", "message other-message svelte-1r61t05");
     			add_location(div2, file$2, 279, 4, 5909);
     		},
@@ -24217,14 +24218,14 @@ var app = (function () {
     			add_location(div2, file$2, 270, 1, 5696);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "class", "inputBox svelte-1r61t05");
-    			add_location(input, file$2, 292, 2, 6199);
-    			add_location(div3, file$2, 293, 2, 6259);
+    			add_location(input, file$2, 292, 2, 6206);
+    			add_location(div3, file$2, 293, 2, 6266);
     			attr_dev(i, "class", "fa fa-paper-plane");
-    			add_location(i, file$2, 295, 3, 6309);
+    			add_location(i, file$2, 295, 3, 6316);
     			attr_dev(button1, "class", "svelte-1r61t05");
-    			add_location(button1, file$2, 294, 2, 6274);
+    			add_location(button1, file$2, 294, 2, 6281);
     			attr_dev(div4, "class", "form svelte-1r61t05");
-    			add_location(div4, file$2, 291, 1, 6178);
+    			add_location(div4, file$2, 291, 1, 6185);
     			attr_dev(main, "class", "shadow svelte-1r61t05");
     			add_location(main, file$2, 265, 0, 5509);
     		},
