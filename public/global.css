@@ -39,7 +39,7 @@ body {
 	top: -2px;
 	left: -2px;
 	background: var(--gradient-shadow);
-	background-size: 150%;
+	background-size: 220%;
 	width: calc(101% );
 	height: calc(101%);
 	z-index: -1;
