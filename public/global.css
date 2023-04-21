@@ -3,7 +3,61 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	background: #f0f1f2;
+	/* background: #f0f1f2; */
+	
+}
+
+/* shadow animation  */
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#fb00947d,
+		#0000ff7d,
+		#00ff007d,
+		#ffff007d,
+		#ff00007d,
+		#fb00947d,
+		#0000ff7d,
+		#00ff007d,
+		#ffff007d,
+		#ff00007d
+	);
+}
+
+.shadow {
+	border-radius: 25px;
+	background: #ade1ff; 
+}
+.shadow:before,
+.shadow:after {
+	border-radius: 25px;
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 150%;
+	width: calc(101% );
+	height: calc(101%);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+	filter: blur(50px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
